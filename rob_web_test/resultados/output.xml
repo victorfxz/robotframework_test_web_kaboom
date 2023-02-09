@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230209 11:03:11.258" rpa="false" schemaversion="3">
+<suite id="s1" name="Kaboom Testes" source="C:\Curso_RobotFramework\WebTesting\kaboom_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Adicionar PC Gamer mais caro ao carrinho de compras" line="8">
+<kw name="Abrir o navegador" library="kaboom_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230209 11:03:11.894" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230209 11:03:11.893" endtime="20230209 11:03:14.000"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230209 11:03:14.000" endtime="20230209 11:03:14.123"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:11.893" endtime="20230209 11:03:14.123"/>
+</kw>
+<kw name="Acessar a home page do site Kabum.com.br" library="kaboom_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230209 11:03:14.127" level="INFO">Opening url 'https://www.kabum.com.br'</msg>
+<status status="PASS" starttime="20230209 11:03:14.127" endtime="20230209 11:03:36.912"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU_DEPARTAMENTOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:36.912" endtime="20230209 11:03:37.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(.,'Entendi')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 11:03:37.100" level="INFO">Clicking element '//button[contains(.,'Entendi')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:37.098" endtime="20230209 11:03:37.569"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:14.125" endtime="20230209 11:03:37.569"/>
+</kw>
+<kw name="Entrar no menu &quot;Departamentos&quot;" library="kaboom_resources">
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>locator=${MENU_DEPARTAMENTOS}</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230209 11:03:37.573" level="INFO">Simulating Mouse Up on element '//span[contains(.,'DEPARTAMENTOS')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:37.572" endtime="20230209 11:03:38.094"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:37.570" endtime="20230209 11:03:38.094"/>
+</kw>
+<kw name="Selecionar a categoria &quot;Computadores&quot;" library="kaboom_resources" sourcename="Selecionar a categoria &quot;${FRASE}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:38.094" endtime="20230209 11:03:38.766"/>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores']</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230209 11:03:38.767" level="INFO">Simulating Mouse Up on element '//a[@href='https://www.kabum.com.br/computadores']'.</msg>
+<status status="PASS" starttime="20230209 11:03:38.766" endtime="20230209 11:03:39.102"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:38.094" endtime="20230209 11:03:39.102"/>
+</kw>
+<kw name="Selecionar a subcategoria &quot;PC&quot;" library="kaboom_resources" sourcename="Selecionar a subcategoria &quot;${FRASE}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores/pc']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:39.103" endtime="20230209 11:03:39.374"/>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores/pc']</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230209 11:03:39.375" level="INFO">Simulating Mouse Up on element '//a[@href='https://www.kabum.com.br/computadores/pc']'.</msg>
+<status status="PASS" starttime="20230209 11:03:39.374" endtime="20230209 11:03:39.696"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:39.102" endtime="20230209 11:03:39.697"/>
+</kw>
+<kw name="Clicar na categoria &quot;PC Gamer&quot;" library="kaboom_resources" sourcename="Clicar na categoria ${FRASE}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores/pc/pc-gamer']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:39.698" endtime="20230209 11:03:40.007"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@href='https://www.kabum.com.br/computadores/pc/pc-gamer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 11:03:40.008" level="INFO">Clicking element '//a[@href='https://www.kabum.com.br/computadores/pc/pc-gamer']'.</msg>
+<status status="PASS" starttime="20230209 11:03:40.007" endtime="20230209 11:03:44.758"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:39.698" endtime="20230209 11:03:44.758"/>
+</kw>
+<kw name="Filtrar pelo preço" library="kaboom_resources">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>locator=//summary[@class='filterHeader'][contains(.,'Marcas')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230209 11:03:44.759" endtime="20230209 11:03:45.124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[contains(.,'Categorias relacionadas')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:45.125" endtime="20230209 11:03:45.261"/>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>locator=//select[contains(@class,'sc-8c5ed0b2-0 dRMwzp')]</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230209 11:03:45.263" level="INFO">Simulating Mouse Up on element '//select[contains(@class,'sc-8c5ed0b2-0 dRMwzp')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:45.262" endtime="20230209 11:03:45.626"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//summary[contains(.,'Preço')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:45.626" endtime="20230209 11:03:45.657"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//option[@value='-price'][contains(.,'Preço decrescente')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 11:03:45.657" level="INFO">Clicking element '//option[@value='-price'][contains(.,'Preço decrescente')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:45.657" endtime="20230209 11:03:45.937"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:44.759" endtime="20230209 11:03:45.938"/>
+</kw>
+<kw name="Acessar produto" library="kaboom_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[contains(.,'Pc Gamer Ocex Intel I9 - Rtx 4080 - 64GB Ddr5 - M.2 2TB G4')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:45.940" endtime="20230209 11:03:46.879"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>locator=//summary[@class='filterHeader'][contains(.,'Marcas')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230209 11:03:46.879" endtime="20230209 11:03:47.220"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>locator=//img[contains(@title,'Pc Gamer Ocex Intel I9 - Rtx 4080 - 64GB Ddr5 - M.2 2TB G4')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230209 11:03:47.220" level="INFO">Clicking image '//img[contains(@title,'Pc Gamer Ocex Intel I9 - Rtx 4080 - 64GB Ddr5 - M.2 2TB G4')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:47.220" endtime="20230209 11:03:51.711"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:45.939" endtime="20230209 11:03:51.711"/>
+</kw>
+<kw name="Adicionar ao carrinho de compras" library="kaboom_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[contains(.,'Pc Gamer Ocex Intel I9 - Rtx 4080 - 64GB Ddr5 - M.2 2TB G4')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:51.712" endtime="20230209 11:03:51.761"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>locator=//input[@id='inputCalcularFrete']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230209 11:03:51.761" endtime="20230209 11:03:52.072"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[@class='sc-8b813326-0 jqYsju'][contains(.,'COMPRAR')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230209 11:03:52.073" level="INFO">Clicking element '//button[@class='sc-8b813326-0 jqYsju'][contains(.,'COMPRAR')]'.</msg>
+<status status="PASS" starttime="20230209 11:03:52.073" endtime="20230209 11:03:52.744"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:51.711" endtime="20230209 11:03:52.745"/>
+</kw>
+<kw name="Verificar se o produto foi adicionado com sucesso" library="kaboom_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//strong[contains(.,'PRODUTO ADICIONADO NO CARRINHO')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230209 11:03:52.748" endtime="20230209 11:03:56.257"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:52.747" endtime="20230209 11:03:56.257"/>
+</kw>
+<kw name="Fechar o navegador" library="kaboom_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230209 11:03:56.441" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230209 11:03:56.258" endtime="20230209 11:03:56.441"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230209 11:03:56.442" endtime="20230209 11:04:00.020"/>
+</kw>
+<status status="PASS" starttime="20230209 11:03:56.258" endtime="20230209 11:04:00.020"/>
+</kw>
+<doc>Esse teste verifica o acesso, filtragem e adicão de produto ao carrinho de compras</doc>
+<tag>procura_pcgamer</tag>
+<status status="PASS" starttime="20230209 11:03:11.891" endtime="20230209 11:04:00.020"/>
+</test>
+<doc>Essa suite testa o site da Kabum.com.br</doc>
+<status status="PASS" starttime="20230209 11:03:11.258" endtime="20230209 11:04:00.023"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">procura_pcgamer</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Kaboom Testes">Kaboom Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
