@@ -1,4 +1,4 @@
-# robotframework_test_web_kaboom
+# Teste Web com RobotFramework - Site Kaboom
 
 Teste Web com Robot Framework >> Teste de Filtragem e Adição ao Carrinho
 
